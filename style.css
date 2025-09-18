@@ -11,18 +11,38 @@ a {
     color: white;
 }
 
+.announcements {
+    margin-bottom: 20px;
+}
+
+.announcement-list {
+    background-color: white;
+    padding: 0 30px;
+    border-radius: 10px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 235px 1fr;
     grid-template-rows: 1fr 5fr;
+    height: 100vh;
 }
 
 .content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 3fr 300px;
     background-color: #d3d3d3;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-right-side {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dashboard {
@@ -93,6 +113,28 @@ a {
     gap: 10px;
 }
 
+.announcements li {
+    padding: 30px 0;
+}
+
+.announcements ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements ul p:first-child {
+    font-weight: bold;
+}
+
+.announcements ul p:last-child {
+    color: gray;
+}
+
+.announcements ul li:nth-child(2) {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
 .actions ul {
     display: flex;
     gap: 15px;
@@ -119,6 +161,12 @@ a {
     border-radius: 30px;
 }
 
+.projects ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
 .search-bar img {
     height: 20px;
     width: 20px;
@@ -135,6 +183,12 @@ a {
     background-color: white;
 }
 
+.trending-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .user-info img {
     width: 90px;
     height: 90px;
@@ -149,10 +203,21 @@ a {
     border-radius: 20px;
 }
 
+.projects ul li {
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .dashboard li a, .dashboard li{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.projects > p, .announcements > p, .trending > p {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #dashboard {
