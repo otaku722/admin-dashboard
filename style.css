@@ -11,6 +11,12 @@ a {
     color: white;
 }
 
+h2 {
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
 .announcements {
     margin-bottom: 20px;
 }
@@ -40,9 +46,6 @@ a {
 
 .content-right-side {
     grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .dashboard {
@@ -55,7 +58,6 @@ a {
     gap: 60px;
     font-size: 1.2rem;
     padding: 30px 20px;
-    display: flex;
 }
 
 .hi-there-text {
@@ -161,10 +163,10 @@ a {
     border-radius: 30px;
 }
 
-.projects ul{
+.projects ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .search-bar img {
@@ -189,6 +191,16 @@ a {
     border-radius: 10px;
 }
 
+.trending-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.usernames p:last-child {
+    color: gray;
+}
+
 .user-info img {
     width: 90px;
     height: 90px;
@@ -204,8 +216,11 @@ a {
 }
 
 .projects ul li {
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dashboard li a, .dashboard li{
@@ -214,12 +229,17 @@ a {
     align-items: center;
 }
 
-.projects > p, .announcements > p, .trending > p {
-    padding: 10px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
+.projects li div {
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
+.projects li img {
+    height: 25px;
+    width: 25px;
+}
 #dashboard {
     font-size: 1.4rem;
     font-weight: bold;
