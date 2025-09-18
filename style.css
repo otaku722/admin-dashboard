@@ -34,13 +34,68 @@ a {
     flex-direction: column;
     gap: 60px;
     font-size: 1.2rem;
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
+}
+
+.hi-there-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hi-there-text > *:first-child {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.hi-there-text > *:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .profile {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions ul {
+    display: flex;
+    gap: 15px;
 }
 
 .content li {
@@ -56,6 +111,42 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.profile-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.search-bar img {
+    height: 20px;
+    width: 20px;
+}
+
+.search-bar input {
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 75%;
+    background-color: rgb(233, 231, 231);
+}
+
+.search-bar input:focus {
+    background-color: white;
+}
+
+.user-info img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.actions ul button {
+    background-color: #0083f6d3;
+    color: white;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 20px;
 }
 
 .dashboard li a, .dashboard li{
